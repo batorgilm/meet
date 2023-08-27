@@ -18,7 +18,7 @@ export default function Home() {
       <h3 className={`text-[24px] mt-6 text-pink-400 ${pacifico.className}`}>
         Аймар санаад байх юоом.
       </h3>
-      <div className="mt-4 flex gap-4 mt-20">
+      <div className="mt-4 flex gap-4 mt-16">
         <button
           onClick={() => {
             setError('')
@@ -38,8 +38,8 @@ export default function Home() {
           Дараа больё
         </button>
       </div>
-      {success && <p className="text-green-4`00 mt-10 font-medium">{success}</p>}
-      {error && <p className="text-red-400 mt-10 ">{error}</p>}
+      {success && <p className="text-green-400 mt-10 font-medium">{success}</p>}
+      {error && <p className="text-red-400 mt-10">{error}</p>}
     </main>
   );
 }
